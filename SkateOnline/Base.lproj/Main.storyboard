@@ -26,23 +26,47 @@ Online</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpz-9V-NLu">
-                                <rect key="frame" x="268" y="390" width="64" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="262.5" y="386" width="75" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Play Now"/>
                                 <connections>
                                     <segue destination="pkv-xS-oeQ" kind="show" id="LqS-oN-C2r"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9D-6N-FFQ">
+                                <rect key="frame" x="225" y="327" width="150" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8cH-CA-IDI">
+                                <rect key="frame" x="225" y="352" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="KF0-Am-8f7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="8cH-CA-IDI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4rC-2B-a8B"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fpz-9V-NLu" secondAttribute="bottom" constant="180" id="7lj-DH-cRO"/>
                             <constraint firstItem="fpz-9V-NLu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AYz-Ry-b3W"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="U9D-6N-FFQ" secondAttribute="bottom" constant="256" id="Bwp-Es-S3x"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8cH-CA-IDI" secondAttribute="bottom" constant="218" id="P1g-zq-u9b"/>
+                            <constraint firstItem="U9D-6N-FFQ" firstAttribute="centerX" secondItem="8cH-CA-IDI" secondAttribute="centerX" id="e5b-yP-LVo"/>
+                            <constraint firstItem="U9D-6N-FFQ" firstAttribute="leading" secondItem="8cH-CA-IDI" secondAttribute="leading" id="mGq-EZ-3pv"/>
                             <constraint firstItem="Spw-OA-Qho" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sdC-vx-61B"/>
                             <constraint firstItem="Spw-OA-Qho" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="124" id="wNL-f2-OIl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1zk-Dj-kcB"/>
+                    <connections>
+                        <outlet property="playNowButton" destination="fpz-9V-NLu" id="zrZ-3U-ijE"/>
+                        <outlet property="screenNameTextField" destination="8cH-CA-IDI" id="3gW-5y-D8I"/>
+                        <outlet property="validNameLabel" destination="U9D-6N-FFQ" id="fIe-1F-itD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26D1BDC885DA3F4FF4356B0E /* Pods_SkateOnlineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806305F48C7612F1D3C206B3 /* Pods_SkateOnlineUITests.framework */; };
+		4D6259F5D4A3DF4E8E43CD10 /* Pods_SkateOnline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE269C263C4C607D22946FD1 /* Pods_SkateOnline.framework */; };
+		AA75AC6AD2435C14DAA189A1 /* Pods_SkateOnlineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE9D3027C9E6AEB2AC46BB2 /* Pods_SkateOnlineTests.framework */; };
 		C209C6E41D3EFB350062D743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209C6E31D3EFB350062D743 /* AppDelegate.swift */; };
 		C209C6E61D3EFB350062D743 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209C6E51D3EFB350062D743 /* ViewController.swift */; };
 		C209C6E91D3EFB350062D743 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C209C6E71D3EFB350062D743 /* Main.storyboard */; };
@@ -15,6 +18,8 @@
 		C209C6F91D3EFB350062D743 /* SkateOnlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209C6F81D3EFB350062D743 /* SkateOnlineTests.swift */; };
 		C209C7041D3EFB350062D743 /* SkateOnlineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209C7031D3EFB350062D743 /* SkateOnlineUITests.swift */; };
 		C209C7121D3F00630062D743 /* SkateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209C7111D3F00630062D743 /* SkateViewController.swift */; };
+		C2302E991D55822F000543A7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2302E981D55822F000543A7 /* UserModel.swift */; };
+		C2302E9B1D559351000543A7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2302E9A1D559351000543A7 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		247CD5747906AA921D94F7A3 /* Pods-SkateOnlineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkateOnlineUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkateOnlineUITests/Pods-SkateOnlineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3544F539E706877AA644C7E2 /* Pods-SkateOnline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkateOnline.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkateOnline/Pods-SkateOnline.release.xcconfig"; sourceTree = "<group>"; };
+		4DD9297E50489A8458F7E7D0 /* Pods-SkateOnlineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkateOnlineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkateOnlineTests/Pods-SkateOnlineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		806305F48C7612F1D3C206B3 /* Pods_SkateOnlineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkateOnlineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		929141074081D8AEB5BFBC09 /* Pods-SkateOnlineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkateOnlineUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkateOnlineUITests/Pods-SkateOnlineUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B3DD19A9A080BAA5EF9BBCAE /* Pods-SkateOnline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkateOnline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkateOnline/Pods-SkateOnline.debug.xcconfig"; sourceTree = "<group>"; };
+		B57D099F814D5F1F2AFEA0CB /* Pods-SkateOnlineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkateOnlineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkateOnlineTests/Pods-SkateOnlineTests.release.xcconfig"; sourceTree = "<group>"; };
 		C209C6E01D3EFB350062D743 /* SkateOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkateOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C209C6E31D3EFB350062D743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C209C6E51D3EFB350062D743 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +61,10 @@
 		C209C7031D3EFB350062D743 /* SkateOnlineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkateOnlineUITests.swift; sourceTree = "<group>"; };
 		C209C7051D3EFB350062D743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C209C7111D3F00630062D743 /* SkateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkateViewController.swift; sourceTree = "<group>"; };
+		C2302E981D55822F000543A7 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C2302E9A1D559351000543A7 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		CDE9D3027C9E6AEB2AC46BB2 /* Pods_SkateOnlineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkateOnlineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE269C263C4C607D22946FD1 /* Pods_SkateOnline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkateOnline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D6259F5D4A3DF4E8E43CD10 /* Pods_SkateOnline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA75AC6AD2435C14DAA189A1 /* Pods_SkateOnlineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26D1BDC885DA3F4FF4356B0E /* Pods_SkateOnlineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51C2981AD9EBDD357E5BFC27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3DD19A9A080BAA5EF9BBCAE /* Pods-SkateOnline.debug.xcconfig */,
+				3544F539E706877AA644C7E2 /* Pods-SkateOnline.release.xcconfig */,
+				4DD9297E50489A8458F7E7D0 /* Pods-SkateOnlineTests.debug.xcconfig */,
+				B57D099F814D5F1F2AFEA0CB /* Pods-SkateOnlineTests.release.xcconfig */,
+				247CD5747906AA921D94F7A3 /* Pods-SkateOnlineUITests.debug.xcconfig */,
+				929141074081D8AEB5BFBC09 /* Pods-SkateOnlineUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C209C6D71D3EFB350062D743 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +115,8 @@
 				C209C6F71D3EFB350062D743 /* SkateOnlineTests */,
 				C209C7021D3EFB350062D743 /* SkateOnlineUITests */,
 				C209C6E11D3EFB350062D743 /* Products */,
+				51C2981AD9EBDD357E5BFC27 /* Pods */,
+				CDC0C385BAB16F02BDA42158 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +140,8 @@
 				C209C6EC1D3EFB350062D743 /* LaunchScreen.storyboard */,
 				C209C6EF1D3EFB350062D743 /* Info.plist */,
 				C209C7111D3F00630062D743 /* SkateViewController.swift */,
+				C2302E981D55822F000543A7 /* UserModel.swift */,
+				C2302E9A1D559351000543A7 /* Config.swift */,
 			);
 			path = SkateOnline;
 			sourceTree = "<group>";
@@ -128,6 +164,16 @@
 			path = SkateOnlineUITests;
 			sourceTree = "<group>";
 		};
+		CDC0C385BAB16F02BDA42158 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE269C263C4C607D22946FD1 /* Pods_SkateOnline.framework */,
+				CDE9D3027C9E6AEB2AC46BB2 /* Pods_SkateOnlineTests.framework */,
+				806305F48C7612F1D3C206B3 /* Pods_SkateOnlineUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C209C7081D3EFB350062D743 /* Build configuration list for PBXNativeTarget "SkateOnline" */;
 			buildPhases = (
+				4CF677090EA627B4854BD9A1 /* [CP] Check Pods Manifest.lock */,
 				C209C6DC1D3EFB350062D743 /* Sources */,
 				C209C6DD1D3EFB350062D743 /* Frameworks */,
 				C209C6DE1D3EFB350062D743 /* Resources */,
+				A59A64EB3EFFFA4AC56D4D4A /* [CP] Embed Pods Frameworks */,
+				8ED985E24A3D1EAEC9CCF693 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C209C70B1D3EFB350062D743 /* Build configuration list for PBXNativeTarget "SkateOnlineTests" */;
 			buildPhases = (
+				126285242B269C44DED72A52 /* [CP] Check Pods Manifest.lock */,
 				C209C6F01D3EFB350062D743 /* Sources */,
 				C209C6F11D3EFB350062D743 /* Frameworks */,
 				C209C6F21D3EFB350062D743 /* Resources */,
+				DB76A2CB2504E32AE01ABB19 /* [CP] Embed Pods Frameworks */,
+				236491B9FD46E666F7B2CF5A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C209C70E1D3EFB350062D743 /* Build configuration list for PBXNativeTarget "SkateOnlineUITests" */;
 			buildPhases = (
+				9DDDFFFF0282BC72FE5533B9 /* [CP] Check Pods Manifest.lock */,
 				C209C6FB1D3EFB350062D743 /* Sources */,
 				C209C6FC1D3EFB350062D743 /* Frameworks */,
 				C209C6FD1D3EFB350062D743 /* Resources */,
+				0DA65B343DE88782BDAB5DCE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +250,7 @@
 				TargetAttributes = {
 					C209C6DF1D3EFB350062D743 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GUVPR6LUGQ;
 					};
 					C209C6F31D3EFB350062D743 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -254,6 +309,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DA65B343DE88782BDAB5DCE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkateOnlineUITests/Pods-SkateOnlineUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		126285242B269C44DED72A52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		236491B9FD46E666F7B2CF5A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkateOnlineTests/Pods-SkateOnlineTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CF677090EA627B4854BD9A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8ED985E24A3D1EAEC9CCF693 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkateOnline/Pods-SkateOnline-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DDDFFFF0282BC72FE5533B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A59A64EB3EFFFA4AC56D4D4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkateOnline/Pods-SkateOnline-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB76A2CB2504E32AE01ABB19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkateOnlineTests/Pods-SkateOnlineTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C209C6DC1D3EFB350062D743 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -262,6 +440,8 @@
 				C209C6E61D3EFB350062D743 /* ViewController.swift in Sources */,
 				C209C7121D3F00630062D743 /* SkateViewController.swift in Sources */,
 				C209C6E41D3EFB350062D743 /* AppDelegate.swift in Sources */,
+				C2302E991D55822F000543A7 /* UserModel.swift in Sources */,
+				C2302E9B1D559351000543A7 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,28 +581,37 @@
 		};
 		C209C7091D3EFB350062D743 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3DD19A9A080BAA5EF9BBCAE /* Pods-SkateOnline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SkateOnline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinshen.SkateOnline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		C209C70A1D3EFB350062D743 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3544F539E706877AA644C7E2 /* Pods-SkateOnline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SkateOnline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinshen.SkateOnline;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		C209C70C1D3EFB350062D743 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DD9297E50489A8458F7E7D0 /* Pods-SkateOnlineTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SkateOnlineTests/Info.plist;
@@ -435,6 +624,7 @@
 		};
 		C209C70D1D3EFB350062D743 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B57D099F814D5F1F2AFEA0CB /* Pods-SkateOnlineTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SkateOnlineTests/Info.plist;
@@ -447,6 +637,7 @@
 		};
 		C209C70F1D3EFB350062D743 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 247CD5747906AA921D94F7A3 /* Pods-SkateOnlineUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SkateOnlineUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -458,6 +649,7 @@
 		};
 		C209C7101D3EFB350062D743 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 929141074081D8AEB5BFBC09 /* Pods-SkateOnlineUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SkateOnlineUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -486,6 +678,7 @@
 				C209C70A1D3EFB350062D743 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C209C70B1D3EFB350062D743 /* Build configuration list for PBXNativeTarget "SkateOnlineTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +687,7 @@
 				C209C70D1D3EFB350062D743 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C209C70E1D3EFB350062D743 /* Build configuration list for PBXNativeTarget "SkateOnlineUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +696,7 @@
 				C209C7101D3EFB350062D743 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

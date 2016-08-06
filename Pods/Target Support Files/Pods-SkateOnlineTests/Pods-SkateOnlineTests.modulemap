@@ -1,0 +1,6 @@
+framework module Pods_SkateOnlineTests {
+  umbrella header "Pods-SkateOnlineTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

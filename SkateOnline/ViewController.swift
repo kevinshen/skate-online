@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var validNameLabel: UILabel!
     @IBOutlet var screenNameTextField: UITextField!
     @IBOutlet var playNowButton: UIButton!
+    
+    var userData: UserModel!
+    var resourceURI: String! = Config.findUserURI
+    var deviceId: String! = UIDevice.currentDevice().identifierForVendor!.UUIDString
+    var newUser: Bool!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +32,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         screenNameTextField.textColor = UIColor.lightGrayColor()
         
         playNowButton.userInteractionEnabled = false
+        
+        print(deviceId)
+        
+        fetchScreenName(resourceURI, deviceId: self.deviceId) { () -> Void in
+            self.screenNameTextField.text = self.userData.screenName
+            self.screenNameTextField.textColor = UIColor.blackColor()
+            self.playNowButton.userInteractionEnabled = true
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,20 +61,42 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        
-        if textField.text == "Kevin" {
-            validNameLabel.text = "Welcome mate"
-            playNowButton.userInteractionEnabled = true
-        } else if textField.text!.isEmpty {
+        if textField.text!.isEmpty {
             validNameLabel.text = ""
             textField.text = "Screen Name"
             textField.textColor = UIColor.lightGrayColor()
             playNowButton.userInteractionEnabled = false
         } else {
-            validNameLabel.text = "Nice scooter n00b"
-            playNowButton.userInteractionEnabled = false
+            validNameLabel.text = "Welcome mate"
+            playNowButton.userInteractionEnabled = true
         }
+    }
+    
+    func fetchScreenName(requestURI: String, deviceId: String, completion: () -> Void) {
         
+        let url = requestURI + deviceId
+        
+        Alamofire.request(.GET, url, encoding: .JSON).responseData { response in
+            switch response.result {
+            case .Success(_):
+                let responseData: JSON = JSON(data: response.data!)
+                print(responseData)
+                if responseData.count == 0 {
+                    self.newUser = true
+                    print("User doesn't exist!")
+                } else if responseData.count > 1 {
+                    self.newUser = true
+                    print("Multiple MongoDB documents with deviceId" + deviceId)
+                } else {
+                    self.newUser = false
+                    self.userData = UserModel(deviceId: responseData[0]["device_id"].string!, screenName: responseData[0]["screen_name"].string!)
+                    completion()
+                }
+                print("Success")
+            case .Failure(let error):
+                print(error)
+            }
+        }
     }
 
 

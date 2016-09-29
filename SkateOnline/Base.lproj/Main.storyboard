@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -30,7 +31,7 @@ Online</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Play Now"/>
                                 <connections>
-                                    <segue destination="pkv-xS-oeQ" kind="show" id="LqS-oN-C2r"/>
+                                    <segue destination="hpN-hF-Ed9" kind="show" id="2e9-wQ-WSM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9D-6N-FFQ">
@@ -72,23 +73,85 @@ Online</string>
             </objects>
             <point key="canvasLocation" x="1057" y="308"/>
         </scene>
-        <!--Skate View Controller-->
-        <scene sceneID="uir-pj-rpj">
+        <!--Lobby View Controller-->
+        <scene sceneID="CH8-JI-NVs">
             <objects>
-                <viewController id="pkv-xS-oeQ" customClass="SkateViewController" customModule="SkateOnline" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hpN-hF-Ed9" customClass="LobbyViewController" customModule="SkateOnline" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qfT-G8-VB7"/>
-                        <viewControllerLayoutGuide type="bottom" id="3id-We-6ws"/>
+                        <viewControllerLayoutGuide type="top" id="eGt-aY-c8g"/>
+                        <viewControllerLayoutGuide type="bottom" id="IhJ-7Q-sAS"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jyp-GU-1rv">
+                    <view key="view" contentMode="scaleToFill" id="AVx-tN-sR8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BQC-ID-wGa">
+                                <rect key="frame" x="40" y="74" width="520" height="476"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="6Cj-nL-1qk"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatCell" id="2Ng-M2-zeT" customClass="ChatTableViewCell" customModule="SkateOnline" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="520" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Ng-M2-zeT" id="9uR-pa-I5q">
+                                            <rect key="frame" x="0.0" y="0.0" width="520" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2J-co-0Oh">
+                                                    <rect key="frame" x="8" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="f2J-co-0Oh" firstAttribute="centerY" secondItem="9uR-pa-I5q" secondAttribute="centerY" id="LKE-9d-beG"/>
+                                                <constraint firstItem="f2J-co-0Oh" firstAttribute="leading" secondItem="9uR-pa-I5q" secondAttribute="leadingMargin" id="c7L-O0-IBT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="f2J-co-0Oh" id="ItJ-5E-DLO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6Cj-nL-1qk"/>
+                                    </mask>
+                                </variation>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BQC-ID-wGa" firstAttribute="centerX" secondItem="AVx-tN-sR8" secondAttribute="centerX" id="8fQ-aw-MHN"/>
+                            <constraint firstItem="BQC-ID-wGa" firstAttribute="centerY" secondItem="AVx-tN-sR8" secondAttribute="centerY" id="E1d-Pr-9Fn"/>
+                            <constraint firstItem="BQC-ID-wGa" firstAttribute="centerX" secondItem="AVx-tN-sR8" secondAttribute="centerX" id="Mw1-1I-GEA"/>
+                            <constraint firstItem="BQC-ID-wGa" firstAttribute="top" secondItem="eGt-aY-c8g" secondAttribute="bottom" constant="10" id="R1V-Ao-fd2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BQC-ID-wGa" secondAttribute="trailing" constant="20" id="TH3-lN-IEq"/>
+                            <constraint firstItem="IhJ-7Q-sAS" firstAttribute="top" secondItem="BQC-ID-wGa" secondAttribute="bottom" constant="10" id="dn1-eQ-ujR"/>
+                            <constraint firstItem="BQC-ID-wGa" firstAttribute="leading" secondItem="AVx-tN-sR8" secondAttribute="leadingMargin" constant="20" id="lWI-OW-WVy"/>
+                            <constraint firstItem="BQC-ID-wGa" firstAttribute="top" secondItem="eGt-aY-c8g" secondAttribute="bottom" constant="10" id="rRF-mV-czm"/>
+                            <constraint firstItem="IhJ-7Q-sAS" firstAttribute="top" secondItem="BQC-ID-wGa" secondAttribute="bottom" constant="50" id="vYd-aM-LIt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8fQ-aw-MHN"/>
+                                <exclude reference="E1d-Pr-9Fn"/>
+                                <exclude reference="R1V-Ao-fd2"/>
+                                <exclude reference="TH3-lN-IEq"/>
+                                <exclude reference="dn1-eQ-ujR"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="chatTableView" destination="BQC-ID-wGa" id="hiH-lA-b0c"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N7U-SD-SyO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="28e-5U-1zg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1063" y="1057"/>
+            <point key="canvasLocation" x="1789" y="311"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L3J-W8-zfB">

@@ -17,9 +17,10 @@
 		C209C6EE1D3EFB350062D743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C209C6EC1D3EFB350062D743 /* LaunchScreen.storyboard */; };
 		C209C6F91D3EFB350062D743 /* SkateOnlineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209C6F81D3EFB350062D743 /* SkateOnlineTests.swift */; };
 		C209C7041D3EFB350062D743 /* SkateOnlineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209C7031D3EFB350062D743 /* SkateOnlineUITests.swift */; };
-		C209C7121D3F00630062D743 /* SkateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C209C7111D3F00630062D743 /* SkateViewController.swift */; };
 		C2302E991D55822F000543A7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2302E981D55822F000543A7 /* UserModel.swift */; };
 		C2302E9B1D559351000543A7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2302E9A1D559351000543A7 /* Config.swift */; };
+		C28950581D9C79DA00B7D585 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28950571D9C79DA00B7D585 /* ChatTableViewCell.swift */; };
+		C2C5CD301D9C5AA3007A6040 /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C5CD2F1D9C5AA3007A6040 /* LobbyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +61,10 @@
 		C209C6FF1D3EFB350062D743 /* SkateOnlineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkateOnlineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C209C7031D3EFB350062D743 /* SkateOnlineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkateOnlineUITests.swift; sourceTree = "<group>"; };
 		C209C7051D3EFB350062D743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C209C7111D3F00630062D743 /* SkateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkateViewController.swift; sourceTree = "<group>"; };
 		C2302E981D55822F000543A7 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		C2302E9A1D559351000543A7 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		C28950571D9C79DA00B7D585 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		C2C5CD2F1D9C5AA3007A6040 /* LobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
 		CDE9D3027C9E6AEB2AC46BB2 /* Pods_SkateOnlineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkateOnlineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE269C263C4C607D22946FD1 /* Pods_SkateOnline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkateOnline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -139,9 +141,10 @@
 				C209C6EA1D3EFB350062D743 /* Assets.xcassets */,
 				C209C6EC1D3EFB350062D743 /* LaunchScreen.storyboard */,
 				C209C6EF1D3EFB350062D743 /* Info.plist */,
-				C209C7111D3F00630062D743 /* SkateViewController.swift */,
 				C2302E981D55822F000543A7 /* UserModel.swift */,
 				C2302E9A1D559351000543A7 /* Config.swift */,
+				C2C5CD2F1D9C5AA3007A6040 /* LobbyViewController.swift */,
+				C28950571D9C79DA00B7D585 /* ChatTableViewCell.swift */,
 			);
 			path = SkateOnline;
 			sourceTree = "<group>";
@@ -438,8 +441,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C209C6E61D3EFB350062D743 /* ViewController.swift in Sources */,
-				C209C7121D3F00630062D743 /* SkateViewController.swift in Sources */,
 				C209C6E41D3EFB350062D743 /* AppDelegate.swift in Sources */,
+				C2C5CD301D9C5AA3007A6040 /* LobbyViewController.swift in Sources */,
+				C28950581D9C79DA00B7D585 /* ChatTableViewCell.swift in Sources */,
 				C2302E991D55822F000543A7 /* UserModel.swift in Sources */,
 				C2302E9B1D559351000543A7 /* Config.swift in Sources */,
 			);

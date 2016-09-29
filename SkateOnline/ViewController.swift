@@ -31,6 +31,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         screenNameTextField.text = "Screen Name"
         screenNameTextField.textColor = UIColor.lightGrayColor()
         
+        self.navigationItem.title = "Home"
+        
         playNowButton.userInteractionEnabled = false
         
         print(deviceId)
@@ -92,6 +94,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     self.userData = UserModel(deviceId: responseData[0]["device_id"].string!, screenName: responseData[0]["screen_name"].string!)
                     completion()
                 }
+                print("Success")
+            case .Failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func addNewUser(requestURI: String, deviceId: String, screenName: String, completion: () -> Void) {
+        
+        let params = ["device_id": deviceId, "screen_name": screenName]
+        
+        Alamofire.request(.POST, requestURI, parameters: params, encoding: .JSON).responseData { response in
+            switch response.result {
+            case .Success(_):
                 print("Success")
             case .Failure(let error):
                 print(error)
